@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="chatCell" rowHeight="98" id="KGk-i7-Jjw" customClass="ChatTableViewCell" customModule="MealManagementApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="360" height="98"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="360" height="98"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="N'sLogo01.001" translatesAutoresizingMaskIntoConstraints="NO" id="eom-9j-R22">
+                        <rect key="frame" x="10" y="10" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="eom-9j-R22" secondAttribute="height" multiplier="1:1" id="Iv0-PO-nz7"/>
+                            <constraint firstAttribute="width" constant="60" id="fLY-kE-aRP"/>
+                        </constraints>
+                    </imageView>
+                    <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="相手側メッセージ" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zqW-bt-8hT">
+                        <rect key="frame" x="80" y="25" width="200" height="48"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="200" id="3JK-iP-m1C"/>
+                        </constraints>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12時00分" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H9E-cT-DGk">
+                        <rect key="frame" x="285" y="55" width="65" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="自分側メッセージ" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jhX-Bc-jp8">
+                        <rect key="frame" x="150" y="25" width="200" height="48"/>
+                        <color key="backgroundColor" red="0.60392156862745094" green="0.8784313725490196" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="200" id="S2e-fo-EH9"/>
+                        </constraints>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12時00分" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sUT-9Z-pm2">
+                        <rect key="frame" x="80" y="55" width="65" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="H9E-cT-DGk" secondAttribute="trailing" constant="10" id="1JP-Ti-pwx"/>
+                    <constraint firstAttribute="trailing" secondItem="jhX-Bc-jp8" secondAttribute="trailing" constant="10" id="B5d-1c-qUz"/>
+                    <constraint firstAttribute="bottom" secondItem="zqW-bt-8hT" secondAttribute="bottom" constant="25" id="BCc-PD-0SK"/>
+                    <constraint firstItem="jhX-Bc-jp8" firstAttribute="leading" secondItem="sUT-9Z-pm2" secondAttribute="trailing" constant="5" id="CjC-WX-hhv"/>
+                    <constraint firstItem="zqW-bt-8hT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="25" id="Diz-T6-9cr"/>
+                    <constraint firstItem="jhX-Bc-jp8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="25" id="KHn-Jn-Yrh"/>
+                    <constraint firstItem="zqW-bt-8hT" firstAttribute="leading" secondItem="eom-9j-R22" secondAttribute="trailing" constant="10" id="QIG-1P-WVT"/>
+                    <constraint firstItem="eom-9j-R22" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="o3R-ge-ABw"/>
+                    <constraint firstAttribute="bottom" secondItem="jhX-Bc-jp8" secondAttribute="bottom" constant="25" id="teO-F3-GpB"/>
+                    <constraint firstItem="zqW-bt-8hT" firstAttribute="bottom" secondItem="H9E-cT-DGk" secondAttribute="bottom" id="uDA-L1-Mac"/>
+                    <constraint firstItem="eom-9j-R22" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="uRK-i3-rno"/>
+                    <constraint firstItem="H9E-cT-DGk" firstAttribute="leading" secondItem="zqW-bt-8hT" secondAttribute="trailing" constant="5" id="x4j-yw-f28"/>
+                    <constraint firstItem="jhX-Bc-jp8" firstAttribute="bottomMargin" secondItem="sUT-9Z-pm2" secondAttribute="bottom" constant="-8" id="x6W-tu-f6B"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="myMessageTextView" destination="jhX-Bc-jp8" id="Xht-xh-tfg"/>
+                <outlet property="myMessageTextViewWidth" destination="S2e-fo-EH9" id="ZQt-Iq-Asx"/>
+                <outlet property="myTimeLabel" destination="sUT-9Z-pm2" id="h5I-k8-WWg"/>
+                <outlet property="partnerImageView" destination="eom-9j-R22" id="A6J-Hc-Kup"/>
+                <outlet property="partnerTimeLabel" destination="H9E-cT-DGk" id="EN8-Qu-yKS"/>
+                <outlet property="partnersMessageTextView" destination="zqW-bt-8hT" id="6wr-Pt-nb5"/>
+                <outlet property="partnersMessageTextViewWidth" destination="3JK-iP-m1C" id="7dl-Nb-Cic"/>
+            </connections>
+            <point key="canvasLocation" x="118.84057971014494" y="90.401785714285708"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="N'sLogo01.001" width="1024" height="768"/>
+    </resources>
+</document>
