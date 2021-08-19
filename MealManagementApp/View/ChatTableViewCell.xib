@@ -16,7 +16,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="360" height="98"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="N'sLogo01.001" translatesAutoresizingMaskIntoConstraints="NO" id="eom-9j-R22">
+                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="N'sLogo2" translatesAutoresizingMaskIntoConstraints="NO" id="eom-9j-R22">
                         <rect key="frame" x="10" y="10" width="60" height="60"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="eom-9j-R22" secondAttribute="height" multiplier="1:1" id="Iv0-PO-nz7"/>
@@ -88,6 +88,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="N'sLogo01.001" width="1024" height="768"/>
+        <image name="N'sLogo2" width="769" height="768"/>
     </resources>
 </document>
