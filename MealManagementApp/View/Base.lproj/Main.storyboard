@@ -754,9 +754,7 @@
                             <constraint firstItem="oea-Gj-WdZ" firstAttribute="trailing" secondItem="JqX-Ye-oFX" secondAttribute="trailing" id="yoX-dp-0TA"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="weight" id="khp-rf-gTn">
-                        <inset key="imageInsets" minX="0.0" minY="-18" maxX="0.0" maxY="0.0"/>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="" image="bodyWeight" id="khp-rf-gTn"/>
                     <navigationItem key="navigationItem" id="p7L-bS-ulZ"/>
                     <connections>
                         <outlet property="changeMonthsButton" destination="aTy-dO-l13" id="RBT-1B-xpv"/>
@@ -848,9 +846,7 @@
                             <constraint firstItem="8ce-lh-qgw" firstAttribute="top" secondItem="S2u-t5-SwG" secondAttribute="bottom" constant="22" id="tRq-HJ-VWC"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="mail" id="COR-p6-y5N">
-                        <inset key="imageInsets" minX="0.0" minY="-3" maxX="0.0" maxY="0.0"/>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="" image="mailIcon" id="COR-p6-y5N"/>
                     <navigationItem key="navigationItem" id="hgb-8S-0Dy"/>
                     <connections>
                         <outlet property="chatTableView" destination="S2u-t5-SwG" id="ELP-BU-lu6"/>
@@ -1726,7 +1722,7 @@
                             <constraint firstItem="Q21-1H-5zq" firstAttribute="centerX" secondItem="ry8-gS-RVt" secondAttribute="centerX" id="yxW-L0-rU5"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="eatIcon" id="Ulw-Lj-Gw3"/>
+                    <tabBarItem key="tabBarItem" title="" image="eatIcon2" id="Ulw-Lj-Gw3"/>
                     <navigationItem key="navigationItem" id="Ugr-BN-dQP"/>
                     <size key="freeformSize" width="414" height="1200"/>
                     <connections>
@@ -2099,18 +2095,18 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bodyWeight" width="48" height="48"/>
         <image name="city" width="480" height="640"/>
-        <image name="eatIcon" width="64" height="64"/>
+        <image name="eatIcon2" width="48" height="48"/>
         <image name="image" width="64" height="64"/>
         <image name="imageIcon" width="16" height="16"/>
-        <image name="mail" width="64" height="64"/>
+        <image name="mailIcon" width="48" height="48"/>
         <image name="mountain" width="426" height="640"/>
         <image name="mountain2" width="480" height="640"/>
         <image name="mountain3" width="426" height="640"/>
         <image name="mountain4" width="426" height="640"/>
         <image name="mountain5" width="427" height="640"/>
         <image name="send" width="64" height="64"/>
-        <image name="weight" width="64" height="64"/>
         <image name="write" width="426" height="640"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
