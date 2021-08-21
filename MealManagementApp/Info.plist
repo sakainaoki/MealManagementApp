@@ -25,7 +25,7 @@
 	<key>NSCameraUsageDescription</key>
 	<string>食事の写真を撮ります。</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>すでに撮影している小路の写真を使います。</string>
+	<string>すでに撮影している食事の写真を使います。</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
