@@ -17,15 +17,15 @@
 	<key>CFBundlePackageType</key>
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
-	<string>食事の写真を撮ります。</string>
+	<string>トレーナーに食事の写真を送る為、写真を撮ります。</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>すでに撮影している食事の写真を使います。</string>
+	<string>トレーナーに食事の写真を送る為、すでに撮影している食事の写真を使います。</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
