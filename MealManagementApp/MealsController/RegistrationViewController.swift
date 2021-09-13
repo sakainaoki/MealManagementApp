@@ -110,16 +110,18 @@ class RegistrationViewController: UIViewController {
                 time = "snack"
             }
             guard let uid = Auth.auth().currentUser?.uid else {return}
-            let date = GetDateModel.getTodayDate()
-            let collectionID = date.prefix(6)
-            let documentID = date.suffix(2)
+            let year = UserDefaults.standard.object(forKey: "yearNum") as! String
+            let month = UserDefaults.standard.object(forKey: "monthNum") as! String
+            let day = UserDefaults.standard.object(forKey: "dayNum") as! String
+            let collectionID = year + month
+            let documentID = day
             for data in foods {
                 let docData = ["foodName":data.foodName,
                                "carb":data.carb,
                                "protein":data.protein,
                                "fat":data.fat,
                                "kcal":data.kcal]
-                Firestore.firestore().collection("users").document(uid).collection(String(collectionID)).document(String(documentID)).collection(time).document().setData(docData) { Error in
+                Firestore.firestore().collection("users").document(uid).collection(collectionID).document(documentID).collection(time).document().setData(docData) { Error in
                     if Error != nil {
                         print("fireStoreへの保存に失敗しました。")
                         return

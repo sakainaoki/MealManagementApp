@@ -15,7 +15,10 @@ class SendToStrageModel{
     }
     static func sendMealImageData(data:Data, time:String){
         print(time)
-        let date = GetDateModel.getTodayDate()
+        let year = UserDefaults.standard.object(forKey: "yearNum") as! String
+        let month = UserDefaults.standard.object(forKey: "monthNum") as! String
+        let day = UserDefaults.standard.object(forKey: "dayNum") as! String
+        let date = year + month + day
         guard let uid = Auth.auth().currentUser?.uid else {return}
         let image = UIImage(data: data)
         let mealImageData = image?.jpegData(compressionQuality: 0.1)

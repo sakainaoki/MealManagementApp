@@ -316,20 +316,20 @@ class ViewController: UIViewController {
             
         }
     }
-    func nextButtonIsEnabled(){
-        guard let yearsNum = yearsTextField.text else {return}
-        guard let monthsNum = monthsTextField.text else {return}
-        guard let daysNum = daysTextField.text else {return}
-        let dateNum = yearsNum + monthsNum + daysNum
-        let date = GetDateModel.getTodayDate()
-        if date != dateNum {
-            nextButton.isEnabled = false
-            nextButton.backgroundColor = UIColor.rgb(red: 221, green: 221, blue: 221)
-        }else{
-            nextButton.isEnabled = true
-            nextButton.backgroundColor = UIColor.rgb(red: 48, green: 209, blue: 88)
-        }
-    }
+//    func nextButtonIsEnabled(){
+//        guard let yearsNum = yearsTextField.text else {return}
+//        guard let monthsNum = monthsTextField.text else {return}
+//        guard let daysNum = daysTextField.text else {return}
+//        let dateNum = yearsNum + monthsNum + daysNum
+//        let date = GetDateModel.getTodayDate()
+//        if date != dateNum {
+//            nextButton.isEnabled = false
+//            nextButton.backgroundColor = UIColor.rgb(red: 221, green: 221, blue: 221)
+//        }else{
+//            nextButton.isEnabled = true
+//            nextButton.backgroundColor = UIColor.rgb(red: 48, green: 209, blue: 88)
+//        }
+//    }
     
     private func calcPFC(){
         
@@ -345,10 +345,20 @@ class ViewController: UIViewController {
     
     @IBAction func changeDateButton(_ sender: Any) {
         loadMealsFromFirestore()
-        nextButtonIsEnabled()
+//        nextButtonIsEnabled()
+    }
+    
+    func makeDateID(){
+        guard let yearNum = yearsTextField.text else {return}
+        guard let monthNum = monthsTextField.text else {return}
+        guard let dayNum = daysTextField.text else {return}
+        UserDefaults.standard.setValue(yearNum, forKey: "yearNum")
+        UserDefaults.standard.setValue(monthNum, forKey: "monthNum")
+        UserDefaults.standard.setValue(dayNum, forKey: "dayNum")
     }
     
     @IBAction func nextButton(_ sender: Any) {
+        makeDateID()
         performSegue(withIdentifier: "registration", sender: nil)
     }
     
